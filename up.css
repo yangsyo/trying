@@ -22,3 +22,27 @@ h1{
     text-decoration:none;
     font-weight: bold;
   }
+  @media (max-width:480px) {
+
+  .pc { display:none !important; }
+
+  .tb { display:none !important; }
+
+  }
+
+  @media (min-width:481px) and (max-width:800px) {
+
+  .pc { display:none !important; }
+
+  .mob { display:none !important; }
+
+  }
+
+
+  @media (min-width:801px) {
+
+  .mob { display:none !important; }
+
+  .tb { display:none !important; }
+
+  }
