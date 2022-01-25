@@ -8,13 +8,14 @@ h1{
   color:black;
   font-size:60px;
   margin-top:30px;
-  margin-left:150px;
+  margin-left:120px;
 }
 
   #second li{
     float: left;
     list-style:none;
-    margin-right:100px;
+    margin-right:80px;
+
 
   }
   a{
