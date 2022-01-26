@@ -13,20 +13,133 @@
         <input type="button" value="night mode" onclick="
         day_night_controller(this);
       ">
-      <div id="grid">
-          <h1><a href="index.html">Travel Agency</a></h1>
-      <div id="second">
-      <ul style="margin-top:141px">
+      <style>
+      body {font-family: Arial, Helvetica, sans-serif;}
+      * {box-sizing: border-box}
 
-        <li><a href="index.html">홈</a></li>
-        <li><a href="공지사항.html">공지사항</a></li>
-        <li><a href="메시지.html">메세지</a></li>
-        <li><a href="설정.html">설정</a></li>
-      </ul>
+      /* Full-width input fields */
+      input[type=text], input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+      }
+
+      input[type=text]:focus, input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+      }
+
+      hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+      }
+
+      /* Set a style for all buttons */
+      button {
+        background-color: #04AA6D;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+      }
+
+      button:hover {
+        opacity:1;
+      }
+
+      /* Extra styles for the cancel button */
+      .cancelbtn {
+        padding: 14px 20px;
+        background-color: #f44336;
+      }
+
+      /* Float cancel and signup buttons and add an equal width */
+      .cancelbtn, .signupbtn {
+        float: left;
+        width: 50%;
+      }
+
+      /* Add padding to container elements */
+      .container {
+        padding: 16px;
+      }
+
+      /* Clear floats */
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      /* Change styles for cancel button and signup button on extra small screens */
+      @media screen and (max-width: 300px) {
+        .cancelbtn, .signupbtn {
+           width: 100%;
+        }
+      }
+      </style>
+      <body>
+        <div id="grid">
+            <h1 class="main"><a href="index.html">Travel Agency</a></h1>
+
+          </div>
+      <form action="/action_page.php" style="border:1px solid #ccc">
+        <div class="container">
+          <h2>회원가입</h2>
+          <p></p>
+          <hr>
+
+          <label for="id"><b>아이디</b></label>
+          <input type="text" placeholder="아이디를 입력하세요." name="username" required>
+
+          <label for="psw"><b>비밀번호</b></label>
+          <input type="password" placeholder="비밀번호를 입력하세요." name="psw" required>
+
+          <label for="psw-repeat"><b>비밀번호 재확인</b></label>
+          <input type="password" placeholder="비밀번호를 재입력하세요." name="psw-repeat" required>
+
+          <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> 자동 로그인
+          </label>
+
+          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+          <div class="clearfix">
+            <button type="button" class="cancelbtn">취소</button>
+            <button type="submit" class="signupbtn">회원가입</button>
+          </div>
         </div>
-        </div>
+      </form>
 
+      <style>
 
+      .main{
+        width: 100%;
+        padding: 0 0 0 10px;
+        margin: 0;
+        color: #8a8b8e;
+        font-style: normal;
+        font-size: 50px;
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+        position: relative;
+        display: inline-block;
+        background: none;
+        text-align:center;
+        margin-bottom:80px;
+      }
+      #grid{
+        display: grid;
+        grid-template-columns: 35fr 1fr;
+      }
+      </style>
 
 
   </body>

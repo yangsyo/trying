@@ -186,27 +186,8 @@ h1{
     border-radius: 0 0 4px 4px;
   }
 
-  /* @media (max-width:480px) {
-
-  .pc { display:none !important; }
-
-  .tb { display:none !important; }
-
+  @media screen and (max-width: 300px) {
+   body{
+       width: 100%;
+    }
   }
-
-  @media (min-width:481px) and (max-width:800px) {
-
-  .pc { display:none !important; }
-
-  .mob { display:none !important; }
-
-  }
-
-
-  @media (min-width:801px) {
-
-  .mob { display:none !important; }
-
-  .tb { display:none !important; }
-
-  } */
