@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="nightmode.js">
+</script>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="up.css">
+  </head>
+  <body>
+
+        <input type="button" value="night mode" onclick="
+        day_night_controller(this);
+      ">
+      <div id="grid">
+          <h1 class="main"><a href="index.html">Travel Agency</a></h1>
+
+        </div>
+
+        <div id="login-style">
+        <div id="login-form-wrap">
+          <h2><strong>로그인</strong></h2>
+          <form id="login-form">
+            <p>
+
+            <input type="text" id="username" name="아이디" placeholder="아이디를 입력하세요" required><i class="validation"><span></span><span></span></i>
+            </p>
+            <p>
+
+            <input type="password" placeholder="비밀번호를 입력하세요." name="psw" required><i class="validation"><span></span><span></span></i>
+            </p>
+            <p>
+            <input type="submit" id="login" value="로그인">
+            </p>
+          </form>
+          <div id="create-account-wrap">
+            <p>회원이 아니세요? <a href="회원가입.html">  회원가입하기</a><p>
+          </div><!--create-account-wrap-->
+        </div><!--login-form-wrap-->
+        <!-- partial -->
+        </div>
+
+<style>
+
+.main{
+  width: 100%;
+  padding: 0 0 0 10px;
+  margin: 0;
+  color: #8a8b8e;
+  font-style: normal;
+  font-size: 50px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  display: inline-block;
+  background: none;
+  text-align:center;
+  margin-bottom:80px;
+}
+#grid{
+  display: grid;
+  grid-template-columns: 35fr 1fr;
+}
+</style>
+
+  </body>
+</html>

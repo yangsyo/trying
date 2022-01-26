@@ -2,7 +2,9 @@
       var body ={
         setcolor : function(color){
           document.querySelector('body').style.color = color;
-        },
+        }
+
+        ,
         setbackcolor : function(color){
           document.querySelector('body').style.backgroundColor = color;
         }
